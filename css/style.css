@@ -99,10 +99,10 @@ body {
 .about {
 	position: fixed;
 	bottom: 13px;
-	right: 30px;
+	right: 27px;
 	z-index: 2;
 	font:500 10px "FuturaBT-Medium", Arial, sans-serif;
-	color: #434343;
+	color: #777;
 	letter-spacing: 1px;
 
 }
