@@ -23,6 +23,7 @@
 
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/icons.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 
 		<style>
 
@@ -33,7 +34,34 @@
 
 	<body>
 
-		<div title="logo" class="logo"></div>
+		<div class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="container">
+
+				<div class="navbar-header">			
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        				<span class="icon icon-bar"></span>
+        				<span class="icon icon-bar"></span>
+        				<span class="icon icon-bar"></span>
+					</button>
+      				<a href="#" class="navbar-brand">bifang.org</a>
+				</div>
+
+				<div class="collapse navbar-collapse">
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#" class="smoothScroll">主页</a></li>
+						<li><a href="#feature" class="smoothScroll">订阅</a></li>
+						<li><a href="#about" class="smoothScroll">关于</a></li>
+					</ul>
+
+				</div>
+
+			</div>
+		</div>
+
+		<script src="js/nav/jquery.js"></script>
+		<script src="js/nav/bootstrap.min.js"></script>
+		<script src="js/nav/jquery.sticky.js"></script>
 
 		<script src="js/ThreeWebGL.js"></script>
 		<script src="js/ThreeExtras.js"></script>
@@ -42,6 +70,8 @@
 		<script src="js/RequestAnimationFrame.js"></script>
 
 		<script src="js/Clouds.js"></script>
+
+		<div title="嗨！遇见你，真美好" class="logo"></div>
 
 		<div class="socials transit">
 
@@ -54,9 +84,7 @@
 
 		</div>
 
-		<div>
-			<a title="Designed by 笔方" class="about">@ 2018 BY BIFANG</a>
-		</div>
+		<div title="Designed by 笔方" class ="about">@ 2018 BY BIFANG</div>
 
 	</body>
 </html>

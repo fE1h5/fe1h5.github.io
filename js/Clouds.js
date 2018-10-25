@@ -37,6 +37,7 @@
 	function init() {
 
 		container = document.createElement( 'div' );
+		container.setAttribute("class", "canvas");
 		document.body.appendChild( container );
 
 		camera = new THREE.Camera( 30, window.innerWidth / window.innerHeight, 1, 3000 );
