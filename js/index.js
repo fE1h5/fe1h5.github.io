@@ -12,16 +12,15 @@ function playPause(){
   if(audio.paused)
     {
       audio.play();
-      $(".logo img").css("padding","30px");
-      $(".logo img").css("background","#000");
+      $(".logo img").css("padding","40px");
+      $(".logo img").css("background","#222");
       $(".logo img").addClass("rainbow");
       $(".canvas").addClass("blur");
     }
     else
     {
       audio.pause();
-      $(".logo img").css("padding","10px");
-      $(".logo img").css("background-color","rgba(107, 74, 255, 0.7)");
+      $(".logo img").css("padding","0");
       $(".logo img").removeClass("rainbow");
       $(".canvas").removeClass("blur");
     }   
