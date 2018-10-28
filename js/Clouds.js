@@ -47,7 +47,7 @@
 
 		geometry = new THREE.Geometry();
 
-		var texture = THREE.ImageUtils.loadTexture( 'img/cloud.png');
+		var texture = THREE.ImageUtils.loadTexture( 'files/cloud.png');
 		texture.magFilter = THREE.LinearMipMapLinearFilter;
 		texture.minFilter = THREE.LinearMipMapLinearFilter;
 
