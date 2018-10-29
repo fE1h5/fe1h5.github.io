@@ -51,14 +51,11 @@ a, a:hover {
   top: 0;
   width: 100%;
   height: auto;
-  min-height: 100vh;
-  padding: 170px 20px;
+  padding-top: 15vh;
 }
 @media screen and (max-width: 768px) {
   .homepage {
     height: auto;
-    min-height: 100vh;
-    padding: 120px 20px;
   }
 }
 
@@ -76,13 +73,11 @@ a, a:hover {
 .logo {
   width: 160px;
   height: 160px;
-  margin-left: auto;
-  margin-right: auto;
-  transform: translateY(-50%);
   border-radius: 50%;
+  margin: auto;
   overflow: hidden;
   position: relative;
-  box-shadow: 0px 5px 50px 0px rgba(107, 74, 255, 0.5);
+  box-shadow: 0px 5px 50px 0px rgba(255, 255, 255, 0.3);
 }
 @media screen and (max-width: 576px) {
   .logo {
@@ -101,7 +96,6 @@ a, a:hover {
 }
 
 .homepage__cnt {
-  margin-top: -35px;
   text-align: center;
   padding: 0 20px;
   padding-bottom: 40px;
@@ -109,7 +103,7 @@ a, a:hover {
 }
 
 .homepage-social {
-  margin-top: 25px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,7 +206,7 @@ a, a:hover {
     min-width: inherit;
     margin: 0;
     margin-bottom: 16px;
-    width: 75%;
+    width: 80%;
     max-width: 300px;
   }
   .homepage__button:last-child {
@@ -241,6 +235,7 @@ a, a:hover {
   box-shadow: 0px 7px 30px rgba(19, 127, 212, 0.75);
 }
 .homepage__button.button--orange {
+  margin-top: 10px;
   background: linear-gradient(45deg, #d5135a, #f05924);
   box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.35);
 }

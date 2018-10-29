@@ -7,12 +7,12 @@
 
 function playPause(){
 
-  document.getElementById("audio").volume = 0.1;
+  document.getElementById("audio").volume = 0.2;
 
   if(audio.paused)
     {
       audio.play();
-      $(".logo img").css("padding","40px");
+      $(".logo img").css("padding","35px");
       $(".logo img").css("background","#222");
       $(".logo img").addClass("rainbow");
       $(".canvas").addClass("blur");
