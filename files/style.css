@@ -50,12 +50,12 @@ a, a:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   padding-top: 15vh;
 }
 @media screen and (max-width: 768px) {
   .homepage {
-    height: auto;
+    height: 100%;
   }
 }
 
@@ -291,7 +291,7 @@ a, a:hover {
   padding: 30px;
   padding-bottom: 20px;
   width: 300px;
-  margin-top: 100px;
+  margin-top: 21vh;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 4px 30px rgba(15, 22, 56, 0.35);
