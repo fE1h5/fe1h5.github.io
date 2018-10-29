@@ -11,15 +11,12 @@ function playPause(){
   if(audio.paused)
     {
       audio.play();
-      $(".logo img").css("padding","35px");
-      $(".logo img").css("background","#222");
       $(".logo img").addClass("rainbow");
       $(".canvas").addClass("blur");
     }
     else
     {
       audio.pause();
-      $(".logo img").css("padding","0");
       $(".logo img").removeClass("rainbow");
       $(".canvas").removeClass("blur");
     }   
