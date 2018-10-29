@@ -1,9 +1,8 @@
-  var messageBox = document.querySelector('.js-pay');
-  var wx = document.querySelector('.js-weixin');
-  var btn = document.querySelector('.js-pay-btn');
-  var card = document.querySelector('.js-homepage');
-  var img = document.getElementById('img');
-  var closeBtn = document.querySelectorAll('.js-pay-close');
+var messageBox = document.querySelector('.js-pay');
+var wx = document.querySelector('.js-weixin');
+var btn = document.querySelector('.js-pay-btn');
+var card = document.querySelector('.js-homepage');
+var img = document.getElementById('img');
 
 function playPause(){
 
@@ -39,6 +38,19 @@ function switchBtn() {
   }
 }
 
+function closeBtn() {
+  card.classList.remove('active');
+  if($(".logo img").hasClass('rainbow')){
+    $(".logo").removeClass("blur");
+    $(".homepage__cnt").removeClass("blur");
+  } 
+  else{
+    $(".canvas").removeClass("blur");
+    $(".logo").removeClass("blur");
+    $(".homepage__cnt").removeClass("blur");
+  }
+}
+
   wx.addEventListener('click',function (e) {
     e.preventDefault();
     card.classList.add('active');
@@ -57,23 +69,4 @@ function switchBtn() {
     $(".canvas").addClass("blur");
     $(".logo").addClass("blur");
     $(".homepage__cnt").addClass("blur");
-  });
-
-  closeBtn.forEach(function (element, index) {
-    console.log(element);
-    element.addEventListener('click',function (e) {
-    e.preventDefault();
-    card.classList.remove('active');
-
-    if($(".logo img").hasClass('rainbow')){
-      $(".logo").removeClass("blur");
-      $(".homepage__cnt").removeClass("blur");
-    } 
-    else{
-      $(".canvas").removeClass("blur");
-      $(".logo").removeClass("blur");
-      $(".homepage__cnt").removeClass("blur");
-    }
-
-    });
   });
