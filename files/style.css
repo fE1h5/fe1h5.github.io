@@ -64,6 +64,7 @@ a, a:hover {
 }
 @media screen and (max-width: 768px) {
   .homepage {
+    overflow-y: scroll;
     height: 100%;
     padding-top: 13vh;
   }
